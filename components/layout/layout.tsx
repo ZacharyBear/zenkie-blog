@@ -7,8 +7,9 @@ import { ReactNode } from 'react'
 import Footer from '@/components/footer/footer'
 import { Analytics } from '@vercel/analytics/react'
 
-const name = 'Zenkie Bear'
+const name = 'Zachary Bear'
 export const siteTitle = `Zenkie Bear's Blog`
+const avatar = 'https://avatars.githubusercontent.com/ZacharyBear'
 
 export default function Layout({
   children,
@@ -40,11 +41,11 @@ export default function Layout({
           <>
             <Image
               priority
-              src='/images/profile.jpg'
+              src={avatar}
               className={utilStyles.borderCircle}
               height={144}
               width={144}
-              alt=''
+              alt='Avatar of Zachary'
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -53,11 +54,11 @@ export default function Layout({
             <Link href='/'>
               <Image
                 priority
-                src='/images/profile.jpg'
+                src={avatar}
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
-                alt=''
+                alt='Avatar of Zachary'
               />
             </Link>
             <h2 className={utilStyles.headingLg}>
