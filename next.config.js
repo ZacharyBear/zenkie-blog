@@ -9,6 +9,15 @@ const nextConfig = {
   sassOptions: {
     includPaths: [path.join(__dirname, './styles')],
     prependData: `@use "@/styles/variables";`
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+        pathname: '/u/**'
+      }
+    ]
   }
 }
 
