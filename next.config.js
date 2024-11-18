@@ -15,7 +15,8 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'avatars.githubusercontent.com',
-        pathname: '/u/**'
+        pathname: '/*'
+        // /** is unnecessary
       }
     ]
   }
