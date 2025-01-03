@@ -8,7 +8,7 @@ import Footer from '@/components/footer/footer'
 import { Analytics } from '@vercel/analytics/react'
 
 const name = 'Zachary Bear'
-export const siteTitle = `Zenkie Bear's Blog`
+export const siteTitle = `Zachary Bear's Blog`
 const avatar = 'https://avatars.githubusercontent.com/ZacharyBear'
 
 export default function Layout({
@@ -24,11 +24,11 @@ export default function Layout({
         <link rel='icon' href='/favicon.jpg' />
         <meta
           name='description'
-          content='This is Zenkie Bear’s Blog. I write about programming, design and life~'
+          content='This is Zachary Bear’s Blog. I write about programming, design and life~'
         />
         <meta
           property='og:description'
-          content='This is Zenkie Bear’s Blog. I write about programming, design and life~'
+          content='This is Zachary Bear’s Blog. I write about programming, design and life~'
         />
         <meta
           property='og:image'
