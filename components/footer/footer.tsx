@@ -4,7 +4,7 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className='content'>
         <div className='copyright'>
-          Copyright <a href='https://github.com/ZenkieBear'>Zenkie Bear</a>.
+          Copyright <a href='https://github.com/ZacharyBear'>Zenkie Bear</a>.
         </div>
         <div className='license'>
           Content use{' '}
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className='github'>
           Source opened on{' '}
-          <a href='https://github.com/ZenkieBear/zenkie-blog'>Github</a>
+          <a href='https://github.com/ZacharyBear/zenkie-blog'>Github</a>
         </div>
       </div>
     </div>
