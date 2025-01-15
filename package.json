@@ -5,6 +5,7 @@
     "build": "next build",
     "start": "next start -p 80",
     "lint": "next lint",
+    "lint:staged": "lint-staged",
     "format": "npx prettier -w .",
     "prepare": "husky install"
   },
