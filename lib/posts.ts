@@ -76,10 +76,8 @@ export async function getPostData(id) {
   // Use remark to convert markdown into HTML string
   const processedContent = await unified()
     // todo remove this if there's a new adaptered plugin version
-    // @ts-expect-error
     .use(remarkParse) // Parse markdown
     .use(remarkGfm) // Parse (tables, auto-links, strikethrough, tasklists)
-    // @ts-expect-error
     .use(remarkRehype, { allowDangerousHtml: true }) // Turn markdown into HTML
     .use(rehypeRaw)
     .use(rehypeFormat)
