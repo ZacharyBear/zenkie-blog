@@ -9,6 +9,7 @@ import rehypeDocument from 'rehype-document'
 import rehypeStringify from 'rehype-stringify'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeRaw from 'rehype-raw'
+import remarkGfm from 'remark-gfm'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
@@ -76,15 +77,17 @@ export async function getPostData(id) {
   const processedContent = await unified()
     // todo remove this if there's a new adaptered plugin version
     // @ts-expect-error
-    .use(remarkParse)
+    .use(remarkParse) // Parse markdown
+    .use(remarkGfm) // Parse (tables, auto-links, strikethrough, tasklists)
     // @ts-expect-error
-    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(remarkRehype, { allowDangerousHtml: true }) // Turn markdown into HTML
     .use(rehypeRaw)
     .use(rehypeFormat)
     .use(rehypeDocument)
     .use(rehypeHighlight)
     .use(rehypeStringify)
     .process(matterResult.content)
+
   const contentHtml = processedContent
     .toString()
     .replaceAll('<pre>', '<pre class="codebox">')

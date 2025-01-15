@@ -99,3 +99,30 @@ a > code.inline:hover {
   text-decoration: underline;
   background-color: darken($color: variables.$clr-code-inline-bg, $amount: 5);
 }
+
+.blog-content {
+  table {
+    width: 100%;
+    margin-bottom: 2rem;
+    // Cause it's a local class, we can compute the variables directly
+    border: 1px solid rgba(variables.$clr-primary, .2);
+    border-radius: 1rem;
+    border-spacing: 0;
+  
+    th,
+    td {
+      padding: 10px;
+      border-bottom: 1px dashed rgba(variables.$clr-primary, .5);
+    }
+    th {
+      color: rgba(variables.$clr-primary, 1);
+      border-color: rgba(variables.$clr-primary, .8);
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(variables.$clr-primary, .05);
+    }
+  }
+}
