@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   padding: 0;
@@ -13,13 +14,16 @@ body {
   line-height: 1.6;
   font-size: 18px;
 }
+
 :root {
   --clr-primary: #{variables.$clr-primary};
 }
+
 ::selection {
   background-color: variables.$clr-primary;
   color: white;
 }
+
 a {
   color: variables.$clr-primary;
   text-decoration: none;
@@ -36,10 +40,11 @@ img {
 
 // Components
 pre.codebox {
-  padding: 10px 15px;
+  padding: 10px 15px 1rem;
   border-radius: 10px;
   background: variables.$clr-code-bg;
   line-height: 1.1em;
+  overflow-x: scroll;
 
   code.hljs {
     color: white;
