@@ -8,18 +8,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -103,7 +93,6 @@ a > code.inline:hover {
 .blog-content {
   table {
     width: 100%;
-    margin-bottom: 2rem;
     // Cause it's a local class, we can compute the variables directly
     border: 1px solid rgba(variables.$clr-primary, 0.2);
     border-radius: 1rem;
@@ -123,6 +112,32 @@ a > code.inline:hover {
     }
     tr:nth-child(even) {
       background-color: rgba(variables.$clr-primary, 0.05);
+    }
+  }
+
+  blockquote {
+    position: relative;
+    margin: 0;
+    margin-block: 1rem;
+    padding: 3px 0;
+    padding-left: 1.5rem;
+    color: gray;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      border-radius: 1px;
+      background-color: rgba(variables.$clr-primary, 0.4);
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.2;
+      font-size: 0.9rem;
     }
   }
 }
