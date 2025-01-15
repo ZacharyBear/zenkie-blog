@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 80",
-    "lint": "next lint && npx prettier -w .",
+    "lint": "next lint",
+    "format": "npx prettier -w .",
     "prepare": "husky install"
   },
   "dependencies": {

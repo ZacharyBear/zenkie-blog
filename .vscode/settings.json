@@ -1,6 +1,4 @@
 {
-  "cSpell.words": [
-    "GOARCH",
-    "lowlight"
-  ]
+  "cSpell.words": ["GOARCH", "lowlight"],
+  "editor.formatOnSave": true
 }
