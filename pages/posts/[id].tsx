@@ -13,6 +13,7 @@ export default function Post({
     title: string
     date: string
     contentHtml: string
+    content: string
   }
 }) {
   return (
@@ -34,7 +35,10 @@ export default function Post({
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>
+        <div
+          className='blog-content'
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        ></div>
       </article>
     </Layout>
   )

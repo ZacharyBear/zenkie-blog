@@ -4,7 +4,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 80",
-    "lint": "next lint && npx prettier -w .",
+    "lint": "next lint",
+    "lint:staged": "lint-staged",
+    "format": "npx prettier -w .",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -21,11 +23,12 @@
     "rehype-format": "^5.0.0",
     "rehype-highlight": "^7.0.0",
     "rehype-raw": "^7.0.0",
-    "rehype-stringify": "^10.0.0",
-    "remark-parse": "^10.0.2",
-    "remark-rehype": "^10.1.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
     "styled-components": "^6.0.8",
-    "unified": "^11.0.3"
+    "unified": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "20.5.7",
