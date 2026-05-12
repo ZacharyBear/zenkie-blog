@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className='github'>
           Source opened on{' '}
-          <a href='https://github.com/ZenkieBear/zenkie-blog'>Github</a>
+          <a href='https://github.com/ZacharyBear/zenkie-blog'>Github</a>
         </div>
       </div>
     </div>
