@@ -53,7 +53,7 @@ The second optional parameter of Notification’s constructor is an [`options`](
 
 ```javascript
 const notify = new Notification('hi there', {
-  body: 'I’m Zenkie Bear, thank you for visiting my blog.',
+  body: 'I’m Zachary Bear, thank you for visiting my blog.',
   icon: '/images/profile.jpg',
   data: {
     url: 'https://blog.zenkie.cn/',

@@ -59,7 +59,7 @@ Write markdown document under the header. When you save and refresh the page, th
 
 # IP rights statement.
 
-The original articles of this program belongs to `Zenkie Bear`. They all licensed by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The original articles of this program belongs to `Zachary Bear`. They all licensed by [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## You are free to
 

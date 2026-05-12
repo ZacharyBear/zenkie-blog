@@ -26,7 +26,8 @@ export default function Home({
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          <Shake>👋🏼</Shake> Hi there! I am Zachary Bear(aka <i>Zenkie Bear</i>).
+          <Shake>👋🏼</Shake> Hi there! I am Zachary Bear(aka <i>Zachary Bear</i>
+          ).
         </p>
         <p>
           I am a <strong>Full-Stack Development Engineer</strong> work in China.
