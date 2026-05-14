@@ -8,7 +8,7 @@ import Footer from '@/components/footer/footer'
 import { Analytics } from '@vercel/analytics/react'
 
 const name = 'Zachary Bear'
-export const siteTitle = `Zachary Bear's Blog`
+export const siteTitle = `${name}'s Blog`
 const avatar = 'https://avatars.githubusercontent.com/ZacharyBear'
 
 export default function Layout({
